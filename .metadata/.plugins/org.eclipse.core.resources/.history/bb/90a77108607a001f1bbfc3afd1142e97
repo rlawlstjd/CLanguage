@@ -1,0 +1,24 @@
+package com.test.main;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+public class Test {
+	public static void main(String[] args) {
+		Scanner s = new Scanner (System.in); 
+		
+		System.out.printf("tv의 수량을 입력하세요"); 
+		int amount = s.nextInt();
+		System.out.printf("금액을 입력하세요");
+		int price = s.nextInt(); 
+		
+		int sum = amount * price; 
+		
+		System.out.println("tv의 총 구매 금액 : " + sum);
+	}
+}

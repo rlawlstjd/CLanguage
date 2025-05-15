@@ -1,0 +1,19 @@
+package com.test.main;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+public class Test {
+	public static void main(String[] args) {
+		int i = 3; 
+		float f = 7.77f; 
+		boolean b = true; 
+		
+		System.out.printf("%d,%f,%b" ,i,f,b );
+	}
+}

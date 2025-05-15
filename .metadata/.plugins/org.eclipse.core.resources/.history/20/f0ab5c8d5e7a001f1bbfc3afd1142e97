@@ -1,0 +1,23 @@
+package com.test.main;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+public class Test {
+	public static void main(String[] args) {
+		long a = 300l; 
+		int b; 
+		b  = (int)a; 
+		
+		System.out.println(b);
+		
+	
+	
+	
+	}
+}

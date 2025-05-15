@@ -1,0 +1,24 @@
+package com.test.main;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.printf("5/2=" + 5/2);
+		System.out.printf("5/ 2f="+ 5/2f); 
+		System.out.println("5/2.0=" + 5/2.0);
+		System.out.println("5 / (double)2 =" + 5/(double)2);
+		
+		System.out.println(1000000*1000000000000000l);
+		System.out.println(100000*100000l);
+		System.out.println(1000000L);
+	
+	
+	}
+}

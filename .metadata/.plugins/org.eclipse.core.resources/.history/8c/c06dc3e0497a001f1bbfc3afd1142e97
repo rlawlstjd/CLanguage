@@ -1,0 +1,84 @@
+package com.test.main;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+public class Test {
+	public static void main(String[] args) {
+		Book book = new Book();
+		book.addPage(new Page(0));
+		book.addPage(new Page(1));
+		book.addPage(new Page(2));
+		book.addPage(new Page(3));
+		book.addPage(new Page(4));
+		
+		book.view();
+		book.nextPage();
+		book.view();
+		book.nextPage();
+		book.view();
+		book.nextPage();
+		book.view();
+		System.out.println(); 
+		
+		book.prevPage();
+		book.view(); 
+		book.prevPage();
+		book.view();
+		book.prevPage();
+		book.view();
+		
+	}
+}
+
+class Book{
+	private String title; 
+	private List<Page> pageList;
+	private Stack<Page> pageStack;
+	private int currentPage;
+	
+	Book(){
+		pageList = new LinkedList<>();
+		pageStack = new Stack <>();
+	}
+	
+	public void prevPage() {
+		Page page = pageStack.pop();
+		currentPage = page.getNo();
+	}
+	
+	public void view () {
+		System.out.println(pageList.get(currentPage));
+	}
+	
+	public void nextPage() {
+		pageStack.push(pageList.get(currentPage++));
+	}
+	
+	public void addPage(Page p) {
+		pageList.add(p);
+	}
+	
+} 
+
+class Page {
+	private int no ; 
+	private String coment;
+	
+	public int getNo () {
+		return no;
+	}
+	
+	Page(int no){
+		this.no = no ;
+	}
+	
+	public String toString() {
+		return no + "페이지";
+	}
+}
