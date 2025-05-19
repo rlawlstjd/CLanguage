@@ -12,3 +12,5 @@ int main (void){
     printf("%d", sum (a,b)); 
   
 }
+
+// 자바와 달리 main 밖에다가 함수를 저장함. 

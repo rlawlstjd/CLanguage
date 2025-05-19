@@ -3,20 +3,14 @@
 
 int main(void){ // 매개변수 사용하지 않겠다. {
 
-    int a =0, b=0; 
-    scanf("%d,%d", &a,&b); 
+    int a, b; 
+    int *p = &a; 
+    int *q = &a; 
+    *p = 10 ; 
+
+    printf("%p\n", p); 
+    printf("%p\n", q); 
     
-    if (a > 0){
-        if (b == 0){
-            a = 0; 
-            printf("%d,%d", a,b); 
-        } else {
-            printf("%d,%d", a,b); 
-        }
-    } else {
-        a = -1 ;
-        printf("%d,%d", a,b);
-    }
-    {}
+    printf("%d\n", *p); 
 
 }

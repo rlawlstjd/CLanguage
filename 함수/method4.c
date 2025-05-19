@@ -21,3 +21,5 @@ void fruit (int cnt){
 int main(void){
     fruit(1); 
 }
+
+

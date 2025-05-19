@@ -21,4 +21,6 @@ int main(void){
     }
     printf("for문 종료\n"); 
 
+    
+
 }
