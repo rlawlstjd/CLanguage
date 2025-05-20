@@ -12,7 +12,7 @@ int main(void){
    pb = &a; 
 
    const int *const pc = &a; 
-   pc = &a; 
+   int pc = &a; 
    
 
    printf("%p\n", pa); 
