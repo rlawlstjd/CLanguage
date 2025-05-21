@@ -25,7 +25,7 @@ void enter_ary(int *pa, int length){
         // scnaf가 필요한 것: 저장할 수조  (&) 
         // 컴파일러는 pa[i]를 내부적으로 *(p+1)로 바꿔 해석함 
     }
-    for (int i=0; i<length; i++){
+    for (int i=0; i<length; i ++){
         printf("%d,", pa[i]); 
     }
 }
@@ -33,6 +33,6 @@ void enter_ary(int *pa, int length){
 int main (void){
     int a[5] = {1,2,3,4,5}; 
     size_t b = sizeof(a)/sizeof(a[0]); 
-   // print_ary(a, b);
+    // print_ary(a, b);
     enter_ary(a,b);  
 }
