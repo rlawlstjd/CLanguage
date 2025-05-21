@@ -9,4 +9,8 @@ int main (void){
     // gets() 는 개행문자를 만나면 종료 
     // fgets()는 개행문자 뒤 널문자 만나면 종료 
     printf("%s", str); 
+    
+    puts(str); // 배열에 들어와있는 모두를 출력 but 줄을 자동으로 바꿈. 
+
+
 }
