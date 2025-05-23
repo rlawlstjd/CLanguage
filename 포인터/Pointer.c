@@ -17,7 +17,7 @@ int main (void){
     printf("%d\n", b); 
 
     // 이름부이고 앞에 * 을 붙이면 포인터 선언
-    int *p ; 
+    int *p; 
     p = &a;
     printf("%d\n", p); 
     printf("%d\n", *p); 
