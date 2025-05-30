@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void){ // 매개변수 사용하지 않겠다. {
+int main(void){ 
 
-    int a = 10; 
+    char a[] = "banana"; 
+    char b[] = "apple"; 
 
-    *&a = 20; 
+    strcmp(a,b); 
+    
+    int length = strlen(a); 
 
-    printf("%d\n", a); 
+    printf("%s", a);
 
 }
