@@ -6,4 +6,4 @@ typedef int *IP; // IP ap, bp;
 struct student{
 };
 
-typedef struct student Student; 
+typedef struct student Student;
